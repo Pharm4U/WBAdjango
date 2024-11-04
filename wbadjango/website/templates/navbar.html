@@ -1,0 +1,171 @@
+{% load static %}
+
+
+<div class="site-wrap">
+
+
+  <div class="site-navbar py-2">
+ 
+
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <div class="site-logo">
+            <a href="{% url 'home' %}" class="js-logo-clone"><strong class="text-primary">Apotheek</strong><br>Westerbork</a>
+          </div>
+        </div>
+        <div class="main-nav d-none d-lg-block">
+          <nav class="site-navigation text-right text-md-center" role="navigation">
+            <ul class="site-menu js-clone-nav d-none d-lg-block">
+              <li class="active"><a href="{% url 'home' %}">Home</a></li>
+              <li class="has-children">
+                <a href="#">Over ons</a>
+                <ul class="dropdown">
+                  <li><a href="{% url 'onsteam' %}">Onze Apotheek</a></li>
+                  <li><a href="{% url 'openingstijden' %}">Openingstijden</a></li>
+                  <li><a href="{% url 'dienstapo' %}">Dienstapotheek</a></li>
+                  <li><a href="{% url 'klachten' %}">Klachtenregeling</a></li>
+                  <li><a href="{% url 'privacy' %}">Privacy- &amp; Cookieverklaring</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                  <li><a href="https://home.mijngezondheid.net/nl">Herhaalrecepten</a></li>
+                  <li>
+                    <a href="#">Afhaalkluis</a>
+              
+                  </li>
+                  <li><a href="#">Inloopspreekuur</a></li>
+                  <li><a href="#">Service- en Voorlichtingsdagen</a></li>
+                  
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Informatie</a>
+                <ul class="dropdown">
+                  <li><a href="#">Medische klachten</a></li>
+                 
+                  <li><a href="https://www.apotheeknieuws.nl/">Nieuws</a></li>
+                  <li><a href="#">Toestemming geven</a></li>
+                  <li><a href="#">Reisadvies</a></li>
+                  <li><a href="#">Links</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Meer</a>
+                <ul class="dropdown">
+                  <li><a href="#">Iemand anders machtigen</a></li>
+                  <li>
+                    <a href="#">Merkloos medicijn: goed en goedkoper</a>
+                  
+                  </li>
+                  <li><a href="#">Patiëntenfolders</a></li>
+                  <li><a href="#">Begeleidingsgesprek bij een nieuw medicijn</a></li>
+                  <li><a href="#">Medicijnen in het verkeer</a></li>
+                  <li><a href="#">Geneesmiddelen mee op reis</a></li>
+                  <li><a href="#">Zorgverzekering en apotheek</a></li>
+                </ul>
+              </li>
+            </li>
+
+            <li class="has-children">
+              <a href="#">Contact</a>
+              <ul class="dropdown">
+                <li><a href="{% url 'contact' %}">Email & Telefoon</a></li>
+                
+                
+                <li><a href="{% url 'adresenroute' %}">Adres en Route </a></li>
+                
+              </ul>
+            </li>
+            </li>
+              
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          
+          
+          <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+              class="icon-menu"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+
+  <footer class="site-footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="block-7">
+            <h3 class="footer-heading mb-4">Dienst <strong class="text-primary">Apotheek</strong></h3>
+            <p>Voor spoedgevallen buiten de openingsuren kunt u naar de Wilhelmina apotheek. <br>'s Avonds, 's nachts en in het weekend bereikbaar.
+  
+   
+  
+              <p>Wilhelmina apotheek
+              Europaweg-Zuid 1 <br>
+              9401 RK Assen  <br>
+              T: 0592-302324 <br>
+              F: 0592-325362 <br>
+              Website: <a href= "https://www.wza.nl/pati%C3%ABnt/specialismen-en-afdelingen/wilhelmina-apotheek-4345">Klik hier</a> </p>
+              
+              Neem uw verzekeringspas en een geldig identiteitsbewijs mee.  <br> Betalen is alleen mogelijk per pin.</p>
+          </div>
+       
+        </div>
+        <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+          <h3 class="footer-heading mb-4">Openingstijden</h3>
+          <table>
+            <tr>
+                <td class="day">Maandag</td>
+                <td class="time">08:00 - 17:30</td>
+            </tr>
+            <tr>
+                <td class="day">Dinsdag</td>
+                <td class="time">08:00 - 17:30</td>
+            </tr>
+            <tr>
+                <td class="day">Woensdag</td>
+                <td class="time">08:00 - 17:30</td>
+            </tr>
+            <tr>
+                <td class="day">Donderdag</td>
+                <td class="time">08:00 - 17:30</td>
+            </tr>
+            <tr>
+                <td class="day">Vrijdag</td>
+                <td class="time">08:00 - 17:30</td>
+            </tr>
+           
+        </table>
+        </div>
+  
+        <div class="col-md-6 col-lg-3">
+          <div class="block-5 mb-5">
+            <h3 class="footer-heading mb-4">Contact Info</h3>
+            <ul class="list-unstyled">
+              <li class="address">Groeneweg 3 <br> 9431 BJ <br> Westerbork</li>
+              <li class="phone"><a href="tel:+31593371590">0593 371590</a></li>
+              <li class="email"><a href="mailto: info@apotheekwesterbork.nl">info@apotheekwesterbork.nl</a></li>
+            </ul>
+          </div>
+  
+          
+  
+        </div>
+      </div>
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <p>
+            
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
