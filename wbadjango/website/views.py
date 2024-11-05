@@ -41,6 +41,12 @@ def iemandanders(request):
 
 def toest(request):
     return render(request, 'toest.html', {})
+
+
+def eu(request):
+    return render(request, 'eu.html', {})
+
+
 def contact(request):
     if request.method == 'POST':
         c_fname = request.POST.get('c_fname')

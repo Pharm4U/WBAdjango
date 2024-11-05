@@ -16,4 +16,5 @@ urlpatterns = [
     path('voorl.html', views.voorl, name="voorl"),
     path('iemandanders.html', views.iemandanders, name="iemandanders"),
     path('toest.html', views.toest, name="toest"),
+    path('eu.html', views.eu, name="eu"),
 ]
