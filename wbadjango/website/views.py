@@ -26,6 +26,16 @@ def dienstapo(request):
 def privacy(request):
     return render(request, 'privacy.html', {})
 
+def afhaalkluis(request):
+    return render(request, 'afhaalkluis.html', {})
+
+
+def inloop(request):
+    return render(request, 'inloop.html', {})
+
+def voorl(request):
+    return render(request, 'voorl.html', {})
+
 def contact(request):
     if request.method == 'POST':
         c_fname = request.POST.get('c_fname')

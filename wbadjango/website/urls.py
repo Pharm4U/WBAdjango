@@ -11,4 +11,7 @@ urlpatterns = [
     path('openingstijden.html', views.openingstijden, name="openingstijden"),
     path('dienstapo.html', views.dienstapo, name="dienstapo"),
     path('privacy.html', views.privacy, name="privacy"),
+    path('afhaalkluis.html', views.afhaalkluis, name="afhaalkluis"),
+    path('inloop.html', views.inloop, name="inloop"),
+    path('voorl.html', views.voorl, name="voorl"),
 ]

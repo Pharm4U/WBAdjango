@@ -33,11 +33,11 @@
                 <ul class="dropdown">
                   <li><a href="https://home.mijngezondheid.net/nl">Herhaalrecepten</a></li>
                   <li>
-                    <a href="#">Afhaalkluis</a>
+                    <a href="{% url 'afhaalkluis' %}">Afhaalkluis</a>
               
                   </li>
-                  <li><a href="#">Inloopspreekuur</a></li>
-                  <li><a href="#">Service- en Voorlichtingsdagen</a></li>
+                  <li><a href="{% url 'inloop' %}">Inloopspreekuur</a></li>
+                  <li><a href="{% url 'voorl' %}">Service- en Voorlichtingsdagen</a></li>
                   
                 </ul>
               </li>
@@ -72,7 +72,7 @@
             <li class="has-children">
               <a href="#">Contact</a>
               <ul class="dropdown">
-                <li><a href="{% url 'contact' %}">Email & Telefoon</a></li>
+                <li><a href="{% url 'contact' %}">E-mail & Telefoon</a></li>
                 
                 
                 <li><a href="{% url 'adresenroute' %}">Adres en Route </a></li>
@@ -110,8 +110,7 @@
               <p>Wilhelmina apotheek
               Europaweg-Zuid 1 <br>
               9401 RK Assen  <br>
-              T: 0592-302324 <br>
-              F: 0592-325362 <br>
+              T: <a href="tel:+31592302324">0592-302324</a> <br>
               Website: <a href= "https://www.wza.nl/pati%C3%ABnt/specialismen-en-afdelingen/wilhelmina-apotheek-4345">Klik hier</a> </p>
               
               Neem uw verzekeringspas en een geldig identiteitsbewijs mee.  <br> Betalen is alleen mogelijk per pin.</p>
