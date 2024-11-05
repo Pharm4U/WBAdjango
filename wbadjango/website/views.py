@@ -39,6 +39,8 @@ def voorl(request):
 def iemandanders(request):
     return render(request, 'iemandanders.html', {})
 
+def toest(request):
+    return render(request, 'toest.html', {})
 def contact(request):
     if request.method == 'POST':
         c_fname = request.POST.get('c_fname')

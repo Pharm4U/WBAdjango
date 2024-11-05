@@ -15,4 +15,5 @@ urlpatterns = [
     path('inloop.html', views.inloop, name="inloop"),
     path('voorl.html', views.voorl, name="voorl"),
     path('iemandanders.html', views.iemandanders, name="iemandanders"),
+    path('toest.html', views.toest, name="toest"),
 ]
