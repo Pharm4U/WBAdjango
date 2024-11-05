@@ -36,6 +36,9 @@ def inloop(request):
 def voorl(request):
     return render(request, 'voorl.html', {})
 
+def iemandanders(request):
+    return render(request, 'iemandanders.html', {})
+
 def contact(request):
     if request.method == 'POST':
         c_fname = request.POST.get('c_fname')
