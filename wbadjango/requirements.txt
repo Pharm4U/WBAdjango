@@ -1,0 +1,11 @@
+aiosmtpd==1.4.6
+asgiref==3.8.1
+atpublic==5.0
+attrs==24.2.0
+Django==5.1.2
+python-http-client==3.3.7
+sendgrid==6.11.0
+setuptools==75.2.0
+sqlparse==0.5.1
+starkbank-ecdsa==2.2.0
+whitenoise==6.8.2
